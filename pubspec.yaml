@@ -1,0 +1,31 @@
+name: razorpay_web
+description: Flutter plugin for Razorpay SDK. To know more about Razorpay, visit http://razorpay.com.
+version: 2.0.2
+homepage: https://github.com/gauravmehta13/razorpay_web
+
+environment:
+  sdk: ^3.6.0
+  flutter: ^3.0.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  eventify: ^1.0.1
+  js: ^0.6.7
+  flutter_web_plugins:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.razorpay.razorpay_flutter
+        pluginClass: RazorpayFlutterPlugin
+      ios:
+        pluginClass: RazorpayFlutterPlugin
+      web:
+        pluginClass: RazorpayFlutterPlugin
+        fileName: razorpay_flutter_plugin.dart
